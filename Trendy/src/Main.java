@@ -1,5 +1,9 @@
 /*
+Tien Viet Doan
+CSA 2023
+10/25/23
 
+Get the total number of viewers per-second based off watch time and views count.
 
 
  */
