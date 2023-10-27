@@ -13,6 +13,7 @@ public class Main {
     int totalViewers;
     int totalMinutes;
     int totalHours;
+    
     String myInput;
 
 
@@ -25,7 +26,7 @@ public class Main {
         myInput = mainScanner.nextLine();
         totalMinutes = Integer.parseInt(myInput);
 
-        double calcs = (totalHours*60) + totalMinutes;
+        double calcs = ((totalHours*60) + totalMinutes)/60; // total seconds
 
         return calcs;
     }
@@ -33,11 +34,11 @@ public class Main {
     public double getRatio(double watchTime){
         // total views * percentage of actual viewers / (hours/60 + minutes)/60
 
-        System.out.println("What is the total number of viewers?");
+        System.out.println("What is the total number of views?");
         myInput = mainScanner.nextLine();
         totalViewers = Integer.parseInt(myInput);
 
-        double calcs = totalViewers/watchTime*60;
+        double calcs = totalViewers/watchTime;
         calcs = (calcs+0.5);
         calcs = (int)calcs;
 
