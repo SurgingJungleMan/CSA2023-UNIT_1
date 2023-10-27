@@ -26,7 +26,7 @@ public class Main {
         myInput = mainScanner.nextLine();
         totalMinutes = Integer.parseInt(myInput);
 
-        double calcs = ((totalHours*60) + totalMinutes)/60; // total seconds
+        double calcs = ((totalHours*60) + totalMinutes)*60; // total seconds
 
         return calcs;
     }
