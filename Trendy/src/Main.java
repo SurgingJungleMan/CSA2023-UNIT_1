@@ -31,6 +31,8 @@ public class Main {
     }
 
     public double getRatio(double watchTime){
+        // total views * percentage of actual viewers / (hours/60 + minutes)/60
+
         System.out.println("What is the total number of viewers?");
         myInput = mainScanner.nextLine();
         totalViewers = Integer.parseInt(myInput);
